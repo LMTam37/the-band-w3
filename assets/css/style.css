@@ -26,9 +26,13 @@ ul li {
 
 /* Header */
 #header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #000;
     height: 46.5px;
-    position: relative;
+    z-index: 1;
 }
 
 #nav {
@@ -95,7 +99,7 @@ ul li {
 
 #slider {
     position: relative;
-    /* margin-top: 46px; */
+    margin-top: 46.5px;
     padding-top: 46%;
     background: url('../img/sliders/chicago.jpg') top center/ cover no-repeat;
 }
