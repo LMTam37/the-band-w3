@@ -46,6 +46,11 @@ ul li {
     clear: both;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
+
 /* Header */
 #header {
     position: fixed;
@@ -169,10 +174,6 @@ ul li {
 #content .content-section .description-section {
     opacity: 0.5;
     font-style: italic;
-}
-
-#content .content-section .about-section {
-    text-align: justify;
 }
 
 #content .content-section p {
