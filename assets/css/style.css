@@ -24,8 +24,20 @@ ul li {
     clear: both;
 }
 
+.text-white {
+    color: #fff !important;
+}
+
 .text-center {
     text-align: center !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.text-opacity {
+    opacity: 0.6;
 }
 
 .col {
@@ -46,12 +58,32 @@ ul li {
     clear: both;
 }
 
-.text-justify {
-    text-align: justify !important;
+.margin-bottom-16 {
+    margin-bottom: 16px !important;
 }
 
-.text-opacity {
-    opacity: 0.6;
+.margin-left-16 {
+    margin-left: 16px !important;
+}
+
+.margin-right-16 {
+    margin-right: 16px !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.btn {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    line-height: 22.5px;
 }
 
 /* Header */
@@ -155,10 +187,6 @@ ul li {
     font-weight: 600;
 }
 
-#container {
-    height: 5000px;
-}
-
 #content .content-section {
     width: 800px;
     max-width: 100%;
@@ -182,4 +210,54 @@ ul li {
     width: 60%;
     border-radius: 4px;
     margin-bottom: 16px;
+}
+
+.tour-section {
+    background: #000;
+}
+
+.tour-section .quantity-tickets {
+    margin-top: 40px;
+    background: #fff;
+    list-style-type: none;
+}
+
+.tour-section .quantity-tickets li {
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.quantity-tickets .sold-out-status {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0px 8px;
+    display: inline-block;
+}
+
+.quantity-tickets .stock-status {
+    padding: 0px 8px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.places-list {
+    padding: 32px 8px;
+    margin: 0px -16px;
+}
+
+.places-list .place-section {
+    padding: 0px 8px;
+    margin-bottom: 16px;
+}
+
+.places-list .place-content {
+    padding: 0.150px 16px;
+    background: #fff;
+}
+
+.places-list .place-img {
+    width: 100%;
+    display: block;
 }
