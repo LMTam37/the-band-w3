@@ -86,6 +86,11 @@ ul li {
     line-height: 22.5px;
 }
 
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
 /* Header */
 #header {
     position: fixed;
