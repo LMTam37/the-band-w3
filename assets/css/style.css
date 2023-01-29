@@ -44,6 +44,10 @@ ul li {
     float: left;
 }
 
+.col-half {
+    width: 50%;
+}
+
 .col-third {
     width: 33.33333%;
 }
@@ -265,4 +269,13 @@ ul li {
 .places-list .place-img {
     width: 100%;
     display: block;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
 }
