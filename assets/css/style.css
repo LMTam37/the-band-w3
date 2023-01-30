@@ -60,7 +60,11 @@ ul li {
     clear: both;
 }
 
-.padding-32 {
+.padding-8 {
+    padding: 0 8px;
+}
+
+.padding-tb-32 {
     padding: 32px 0px;
 }
 
@@ -90,6 +94,7 @@ ul li {
     background-color: #000;
     border: none;
     line-height: 22.5px;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -160,6 +165,7 @@ ul li {
 #header .search-btn {
     float: right;
     padding: 12px 24px;
+    cursor: pointer;
 }
 
 #header .search-icon {
@@ -273,11 +279,33 @@ ul li {
     display: block;
 }
 
-.contact-info {
+.contact-content {}
+
+.contact-content .contact-info {
     font-size: 18px;
 }
 
-.contact-info i {
+.contact-content .contact-info i {
     width: 30px;
     display: inline-block;
+}
+
+.contact-form .form-control {
+    line-height: 22.5px;
+    padding: 8px;
+}
+
+.contact-form .form-control {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-form .contact-identity {
+    padding: 0 8px;
+    margin: 0px -16px 8px;
+}
+
+.contact-form .btn {
+    margin: 16px 0;
 }

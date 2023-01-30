@@ -45,7 +45,8 @@
         </div>
 
         <div id="content">
-            <div id="Band" class="introduce-section">
+            <!-- The Band section -->
+            <div id="Band" class="Band-section">
                 <div class="content-section text-center">
                     <h2 class="heading-section">THE BAND</h2>
                     <p class="text-opacity "><i>We love music</i></p>
@@ -59,7 +60,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <div class="members-list text-center row padding-32">
+                    <div class="members-list text-center row padding-tb-32">
                         <div class="band-member col">
                             <p>Name</p>
                             <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="member-item">
@@ -78,6 +79,7 @@
                 </div>
             </div>
 
+            <!-- Tour section -->
             <div id="Tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="heading-section text-white text-center">TOUR DATES</h2>
@@ -121,23 +123,29 @@
                 </div>
             </div>
 
+            <!-- Contact section -->
             <div id="Contact" class="contact-section">
                 <div class="content-section">
                     <h2 class="heading-section text-center">CONTACT</h2>
                     <p class="text-opacity text-center"><i>Fan? Drop a note!</i></p>
-                    <div class="row contact-content">
+                    <div class="row contact-content padding-tb-32">
                         <div class="col col-half contact-info">
                             <i class="ti-location-pin"></i>Chicago, US<br>
                             <i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a><br>
                             <i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a><br>
                         </div>
-                        <div class="col col-half">
+                        <div class="col col-half contact-form">
                             <form action="">
-                                <div class="">
-                                    <input type="text" placeholder="Name" required class="contact-form">
-                                    <input type="email" placeholder="Email" required class="contact-form">
+                                <div class="contact-identity row">
+                                    <div class="col col-half padding-8"><input type="text" placeholder="Name" required
+                                            class="form-control"></div>
+                                    <div class="col col-half padding-8"><input type="email" placeholder="Email" required
+                                            class="form-control"></div>
                                 </div>
-                                <input type="text" placeholder="Message" required class="contact-form">
+
+                                <input type="text" placeholder="Message" required class="form-control">
+
+                                <button type="" class="btn float-right">SEND</button>
                             </form>
                         </div>
                     </div>
