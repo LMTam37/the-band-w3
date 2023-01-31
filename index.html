@@ -96,7 +96,8 @@
                                 <p><b>New York</b></p>
                                 <p class="opacity">Fri 27 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn margin-bottom-16">Buy Tickets</button>
+                                <button href="#" class="btn black-backgroud margin-bottom-16 js-buy-tickets">Buy
+                                    Tickets</button>
                             </div>
                         </div>
 
@@ -106,7 +107,8 @@
                                 <p><b>Paris</b></p>
                                 <p class="opacity">Sat 28 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn margin-bottom-16">Buy Tickets</button>
+                                <button href="#" class="btn black-backgroud margin-bottom-16 js-buy-tickets">Buy
+                                    Tickets</button>
                             </div>
                         </div>
 
@@ -116,13 +118,48 @@
                                 <p><b>San Francisco</b></p>
                                 <p class="opacity">Sun 29 Nov 2016</p>
                                 <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn margin-bottom-16">Buy Tickets</button>
+                                <button href="#" class="btn black-backgroud margin-bottom-16 js-buy-tickets">Buy
+                                    Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Modal -->
+            <div id="ticketModal" class="modal js-modal">
+                <div class="modal-content js-modal-content">
+                    <div class="modal-heading text-center">
+                        <span class="btn js-modal-close">x</span>
+                        <h2><i class="modal-heading-icon ti-bag"></i>Tickets</h2>
+                    </div>
+                    <div class="modal-container">
+                        <p>
+                            <label for="modal-ticket-quantity">
+                                <i class="ti-shopping-cart"></i>
+                                Tickets, $15 per person
+                            </label>
+                        </p>
+                        <input id="modal-ticket-quantity" type="text" placeholder="How many?">
+                        <p>
+                            <label for="modal-customer-email">
+                                <i class="ti-user"></i>
+                                Send to
+                            </label>
+                        </p>
+                        <input id="modal-customer-email" type="text" placeholder="Enter email">
+
+                        <button class="modal-btn">
+                            PAY
+                            <i class="ti-check"></i>
+                        </button>
+
+                        <button class="modal-close-btn btn js-modal-close">Close<i
+                                class="close-icon ti-close"></i></button>
+                        <p class="float-right">Need <a href="#" class="text-blue">help?</a></p>
+                    </div>
+                </div>
+            </div>
             <!-- Contact section -->
             <div id="Contact" class="contact-section">
                 <div class="content-section">
@@ -137,23 +174,25 @@
                         <div class="col col-half contact-form">
                             <form action="">
                                 <div class="contact-identity row">
-                                    <div class="col col-half padding-8"><input type="text" placeholder="Name" required
-                                            class="form-control"></div>
-                                    <div class="col col-half padding-8"><input type="email" placeholder="Email" required
-                                            class="form-control"></div>
+                                    <div class="col col-half padding-8">
+                                        <input type="text" placeholder="Name" required class="form-control">
+                                    </div>
+                                    <div class="col col-half padding-8">
+                                        <input type="email" placeholder="Email" required class="form-control">
+                                    </div>
                                 </div>
 
                                 <input type="text" placeholder="Message" required class="form-control">
 
-                                <button type="" class="btn float-right">SEND</button>
+                                <button type="" class="btn black-backgroud float-right">SEND</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Image of map -->
         </div>
+
+        <!-- Image of map -->
         <img src="./assets/img/map.jpg" alt="" class="map-section">
         <div id="footer" class="opacity">
             <i class="ti-facebook"></i>
@@ -164,6 +203,33 @@
             <i class="ti-linkedin"></i>
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </div>
+
+        <script>
+            const modal = document.querySelector('.js-modal');
+            const modalOpen = document.querySelectorAll('.js-buy-tickets');
+            const modalClose = document.querySelectorAll('.js-modal-close');
+            const modalContent = document.querySelector('.js-modal-content');
+            function showBuyTickets() {
+                modal.classList.add('open');
+            }
+
+            function hideBuyTickets() {
+                modal.classList.remove('open');
+            }
+
+            for (const buyBtn of modalOpen) {
+                buyBtn.addEventListener('click', showBuyTickets);
+            }
+            for (const closeBtn of modalClose) {
+                closeBtn.addEventListener('click', hideBuyTickets);
+            }
+
+            modal.addEventListener('click', hideBuyTickets);
+
+            modalContent.addEventListener('click', function (event) {
+                event.stopImmediatePropagation();
+            })
+        </script>
     </main>
 </body>
 

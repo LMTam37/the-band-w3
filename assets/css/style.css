@@ -28,6 +28,10 @@ ul li {
     color: #fff !important;
 }
 
+.text-blue {
+    color: #2196F3;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -90,11 +94,25 @@ ul li {
 
 .btn {
     padding: 8px 16px;
-    color: #fff;
+}
+
+.black-backgroud {
     background-color: #000;
-    border: none;
+}
+
+button {
+    color: #fff;
     line-height: 22.5px;
+    border: none;
     cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    line-height: 22.5px;
 }
 
 .btn:hover {
@@ -279,7 +297,95 @@ ul li {
     display: block;
 }
 
-.contact-content {}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    width: 900px;
+    position: relative;
+    top: -21px;
+}
+
+.modal-content .modal-heading {
+    padding: 32px 16px;
+    background-color: #009688;
+}
+
+.modal-heading .btn {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-heading .btn:hover {
+    color: #000;
+}
+
+.modal-heading h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.modal-heading .modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-container {
+    padding: 0.150px 16px;
+}
+
+.modal-container p {
+    margin: 15px 0px;
+}
+
+.modal-container input {
+    padding: 8px;
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #009688;
+}
+
+.modal-container button {
+    margin: 16px 0;
+}
+
+.modal-close-btn {
+    background-color: #f44336;
+}
+
+.modal-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.close-icon {
+    position: relative;
+    top: 2px;
+}
 
 .contact-content .contact-info {
     font-size: 18px;
@@ -288,17 +394,6 @@ ul li {
 .contact-content .contact-info i {
     width: 30px;
     display: inline-block;
-}
-
-.contact-form .form-control {
-    line-height: 22.5px;
-    padding: 8px;
-}
-
-.contact-form .form-control {
-    padding: 8px;
-    width: 100%;
-    border: 1px solid #ccc;
 }
 
 .contact-form .contact-identity {
