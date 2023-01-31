@@ -36,7 +36,7 @@ ul li {
     text-align: justify !important;
 }
 
-.text-opacity {
+.opacity {
     opacity: 0.6;
 }
 
@@ -308,4 +308,33 @@ ul li {
 
 .contact-form .btn {
     margin: 16px 0;
+}
+
+.map-section {
+    max-width: 100%;
+    width: 100%;
+    filter: grayscale(50%);
+    display: block;
+}
+
+#footer {
+    font-size: 20px;
+    padding: 64px 16px;
+    color: #000;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+#footer i:hover {
+    opacity: 0.6;
+}
+
+#footer p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#footer p a {
+    color: #000;
 }
