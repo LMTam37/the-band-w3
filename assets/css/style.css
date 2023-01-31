@@ -319,6 +319,7 @@ input {
     width: 900px;
     position: relative;
     top: -21px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .modal-content .modal-heading {
