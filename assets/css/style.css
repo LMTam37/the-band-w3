@@ -78,10 +78,12 @@ img {
 }
 
 .col-half {
+    float: left;
     width: 50%;
 }
 
 .col-third {
+    float: left;
     width: 33.33333%;
 }
 
@@ -146,6 +148,24 @@ img {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
+
+#header .mobile-icon,
+#header .search-btn {
+    padding: 12px 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+#header .search-btn:hover {
+    background: #f44336;
+}
+
 #nav {
     display: inline-block;
 }
@@ -170,7 +190,6 @@ img {
     color: #000;
 }
 
-
 #nav .subnav {
     min-width: 160px;
     background: #fff;
@@ -190,23 +209,9 @@ img {
     padding: 8px 16px;
 }
 
-#header .search-btn {
-    float: right;
-    padding: 12px 24px;
-    cursor: pointer;
-}
-
-#header .search-icon {
-    color: #fff;
-}
-
-#header .search-btn:hover {
-    background: #f44336;
-}
-
 #slider {
     position: relative;
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 50%;
     background: url('../img/sliders/chicago.jpg') top center/ cover no-repeat;
 }
@@ -252,7 +257,6 @@ img {
 #content .content-section .member-item {
     width: 60%;
     border-radius: 4px;
-    margin-bottom: 16px;
 }
 
 .tour-section {
@@ -260,7 +264,6 @@ img {
 }
 
 .tour-section .quantity-tickets {
-    margin-top: 38px;
     background: #fff;
     border: 1px solid #ccc;
     list-style-type: none;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-    <!-- <link rel="stylesheet" href="./assets/fonts/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
@@ -36,19 +35,22 @@
                     </ul>
                 </li>
             </ul>
-            <div class="search-btn text-white">
-                <i class="fa-search fa"></i>
+            <div id="mobile-menu" class="mobile-icon">
+                <i class="text-white fa fa-bars"></i>
+            </div>
+            <div class="search-btn">
+                <i class="text-white fa-search fa"></i>
             </div>
         </div>
 
-        <div id="slider">
-            <div class="text-content">
-                <h3>Chicago</h3>
-                <p><b>Thank you, Chicago - A night we won't forget.</b></p>
-            </div>
-        </div>
 
         <div id="content">
+            <div id="slider">
+                <div class="text-content">
+                    <h3>Chicago</h3>
+                    <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+                </div>
+            </div>
             <!-- The Band section -->
             <div id="Band" class="Band-section">
                 <div class="content-section text-center">
@@ -65,17 +67,19 @@
                         laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div class="members-list text-center row padding-tb-32">
-                        <div class="band-member col col-third">
+                        <div class="band-member col-third mobile-full-col">
                             <p>Name</p>
-                            <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="member-item">
+                            <img src="./assets/img/band_member/bandmember.jpg" alt="Name"
+                                class="member-item margin-bottom-16">
                         </div>
 
-                        <div class="band-member col col-third">
+                        <div class="band-member col-third mobile-full-col">
                             <p>Name</p>
-                            <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="member-item">
+                            <img src="./assets/img/band_member/bandmember.jpg" alt="Name"
+                                class="member-item margin-bottom-16">
                         </div>
 
-                        <div class="band-member col col-third">
+                        <div class="band-member col-third mobile-full-col">
                             <p>Name</p>
                             <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="member-item">
                         </div>
@@ -88,13 +92,14 @@
                 <div class="content-section">
                     <h2 class="heading-section text-white text-center">TOUR DATES</h2>
                     <p class="opacity text-white text-center"><i>Remember to book your tickets!</i></p>
+                    <br>
                     <ul class="quantity-tickets">
                         <li>September <span class="sold-out-status margin-left-16">Sold out</span></li>
                         <li>October <span class="sold-out-status margin-left-16">Sold out</span></li>
                         <li>November <span class="stock-status float-right margin-right-16">3</span></li>
                     </ul>
                     <div class="places-list row">
-                        <div class="place-section col col-third">
+                        <div class="place-section col-third mobile-full-col">
                             <img src="./assets/img/places/newyork.jpg" alt="" class="place-img">
                             <div class="place-content">
                                 <p><b>New York</b></p>
@@ -105,7 +110,7 @@
                             </div>
                         </div>
 
-                        <div class="place-section col col-third">
+                        <div class="place-section col-third mobile-full-col">
                             <img src="./assets/img/places/paris.jpg" alt="" class="place-img">
                             <div class="place-content">
                                 <p><b>Paris</b></p>
@@ -116,7 +121,7 @@
                             </div>
                         </div>
 
-                        <div class="place-section col col-third">
+                        <div class="place-section col-third mobile-full-col">
                             <img src="./assets/img/places/sanfran.jpg" alt="" class="place-img">
                             <div class="place-content">
                                 <p><b>San Francisco</b></p>
@@ -169,18 +174,18 @@
                     <h2 class="heading-section text-center">CONTACT</h2>
                     <p class="opacity text-center"><i>Fan? Drop a note!</i></p>
                     <div class="row contact-content padding-tb-32">
-                        <div class="col col-half contact-info">
-                            <i class="fa fa-map-marker"></i>Chicago, US<br>
-                            <i class="fa fa-phone"></i>Phone: <a href="tel:+00 151515">+00 151515</a><br>
-                            <i class="fa fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a><br>
+                        <div class="contact-info col-half mobile-full-col margin-bottom-16">
+                            <i class="fa fa-map-marker"></i> Chicago, US<br>
+                            <i class="fa fa-phone"></i> Phone: <a href="tel:+00 151515">+00 151515</a><br>
+                            <i class="fa fa-envelope"></i> Email: <a href="mailto:mail@mail.com">mail@mail.com</a><br>
                         </div>
-                        <div class="col col-half contact-form">
+                        <div class="col-half mobile-full-col contact-form">
                             <form action="">
                                 <div class="contact-identity row">
-                                    <div class="col col-half padding-8">
+                                    <div class="col-half mobile-full-col padding-8">
                                         <input type="text" placeholder="Name" required class="form-control">
                                     </div>
-                                    <div class="col col-half padding-8">
+                                    <div class="col-half mobile-full-col padding-8">
                                         <input type="email" placeholder="Email" required class="form-control">
                                     </div>
                                 </div>
@@ -232,6 +237,37 @@
             modalContent.addEventListener('click', function (event) {
                 event.stopImmediatePropagation();
             })
+        </script>
+
+        <script>
+            var header = document.getElementById('header');
+            var mobileIcon = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+
+            mobileIcon.onclick = function () {
+                var isClosed = header.clientHeight === headerHeight;
+                if (isClosed) {
+                    header.style.height = 'auto';
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"');
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function () {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if (isParentMenu) {
+                        event.preventDefault();
+                    }
+                    else {
+                        header.style.height = null;
+                    }
+                }
+            }
         </script>
     </main>
 </body>
